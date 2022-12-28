@@ -357,7 +357,6 @@ hr {
     .main-content {
         grid-template-columns: auto;
         grid-template-rows: auto auto; /* */
-        padding: 25px 25px 0 25px;
         gap: 25px;
     }
     
