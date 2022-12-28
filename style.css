@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root {
+    --md-font-size: 1rem;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', serif;
@@ -9,10 +13,10 @@ body {
     margin: 0;
 }
 
-.container {
+.main-container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 7fr;
 }
 
@@ -21,12 +25,12 @@ body {
     background-color: #188dcc;
     color: white;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: var(--md-font-size);
     grid-area: 1 / 1 / -1  / 2;
 }
 
 .sidebar-logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 1rem 1rem 0.5rem;
     display: flex;
     align-items: center;
@@ -34,15 +38,15 @@ body {
 }
 
 .sidebar img {
-    height: 1.5rem;
+    height: 1.35rem;
     filter: invert(100%);
 }
 
 .sidebar-logo > img {
-    height: 3rem;
+    height: 2.5rem;
 }
 
-a {
+a, a:hover {
     text-decoration: inherit;
     color: inherit;
 }
@@ -62,12 +66,17 @@ li {
 .sidebar-content-1 > li:hover, .sidebar-content-2 > li:hover, .header-bottom-right > button:hover {
     cursor: pointer;
     background-color: #056599;
+    transition: background-color .2s ease-in-out;
 }
 
 .sidebar-content-1 {
-    padding-bottom: 1rem;
+    padding: 0rem;
+    margin-top: 1rem;
 }
 
+.sidebar-content-1 > li{
+    padding: .75rem;
+}
 
 /* HEADER */
 .header {
@@ -149,7 +158,7 @@ li {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color:#e2e8f0;
+    background-color: #e2e8f0;
     box-shadow: 0px -2px 5px -2px #888;
 }
 
@@ -160,25 +169,25 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
-.card {
-    background-color: #ffffff;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 2px rgb(209, 208, 208);
-    border-left: 7px solid #eeb328;
-    display: grid;
-    grid-template-rows: auto auto; /* */
-}
+/*.card {*/
+/*    background-color: #ffffff;*/
+/*    margin: 15px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 3px 3px 2px rgb(209, 208, 208);*/
+/*    border-left: 7px solid #eeb328;*/
+/*    display: grid;*/
+/*    grid-template-rows: auto auto; !* *!*/
+/*}*/
 
-.card-text {
-    padding: 1rem 7rem 0 1.5rem;
-}
+/*.card-text {*/
+/*    padding: 1rem 7rem 0 1.5rem;*/
+/*}*/
 
-.card-title {
-    font-weight: bolder;
-    font-size: larger;
-    line-height: 0;
-}
+/*.card-title {*/
+/*    font-weight: bolder;*/
+/*    font-size: larger;*/
+/*    line-height: 0;*/
+/*}*/
 
 .card-icons {
     justify-self: end;
@@ -189,13 +198,13 @@ li {
 
 .title {
     font-weight: bolder;
-    font-size: larger;
+    font-size: 18px;
     padding: 1rem 0rem 0.4rem 1rem;
 }
 
 /* Right side */
 .right-side {
-    background-color:#e2e8f0;
+    background-color: #e2e8f0;
     display: grid;
     grid-template-rows: auto 1fr auto 1fr;
 }
@@ -216,7 +225,7 @@ li {
 }
 
 .announcements p {
-    margin : 0;
+    margin: 0;
 }
 
 .ann-text > p:nth-of-type(1) {
@@ -231,7 +240,7 @@ hr {
     color: #636363;
 }
 
-.trending  > ul {
+.trending > ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -246,29 +255,29 @@ hr {
     height: 100%;
     width: 0;
     position: fixed;
-    background-color: rgba(0,0,0, 0.91);
+    background-color: rgba(0, 0, 0, 0.91);
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 1;
-  }
-  
+}
+
 .overlay-content {
     position: relative;
     top: 30%;
     text-align: center;
 }
-  
+
 .overlay a {
     padding: 9px;
     color: #818181;
     display: block;
     font-size: 25px;
 }
-  
+
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
-  
+
 .overlay #close {
     position: absolute;
     top: 15px;
@@ -346,20 +355,20 @@ hr {
 }
 
 @media only screen and (max-width: 1320px) {
-    .container {
+    .main-container {
         grid-template-columns: auto;
     }
-    
+
     .sidebar {
         display: none;
     }
-    
+
     .main-content {
         grid-template-columns: auto;
         grid-template-rows: auto auto; /* */
         gap: 25px;
     }
-    
+
     .title {
         text-align: center;
     }
