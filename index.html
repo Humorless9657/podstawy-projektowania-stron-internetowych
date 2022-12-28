@@ -13,11 +13,11 @@
         <div id="nav" class="overlay">
             <a href="#" id="close">×</a>
             <div class="overlay-content">
-              <a href="#">Home</a>
+              <a class="tasks" href="#">Home</a>
               <a href="#">Profile</a>
               <a href="#">Messages</a>
-              <a href="#">History</a>
-              <a href="#">Tasks</a>
+              <a class="images" href="#">Images</a>
+              <a class="tasks" href="#">Projects</a>
               <a href="#">Communities</a>
               <a href="#">Settings</a>
               <a href="#">Support</a>
@@ -27,11 +27,11 @@
         <div class="sidebar">
             <div class="sidebar-logo"><img src="icons/dashboard.svg">Dashboard</div>
             <ul class="sidebar-content-1">
-                <li><img src="icons/home.svg"><a href="#">Home</a></li>
+                <li class="tasks"><img src="icons/home.svg"><a href="#">Home</a></li>
                 <li><img src="icons/account-settings.svg"><a href="#">Profile</a></li>
                 <li><img src="icons/message.svg"><a href="#">Messages</a></li>
-                <li><img src="icons/clock.svg"><a href="#">History</a></li>
-                <li><img src="icons/task.svg"><a href="#">Tasks</a></li>
+                <li class="images"><img src="icons/image.svg"><a href="#">Images</a></li>
+                <li class="tasks"><img src="icons/task.svg"><a href="#">Projects</a></li>
                 <li><img src="icons/account-group.svg"><a href="#">Communities</a></li>
             </ul>
             <ul class="sidebar-content-2">
@@ -51,7 +51,7 @@
                     <div class="header-top-right">
                         <a href="#"><img class="header-icon" src="icons/bell.svg"></a>
                         <a href="#"><img class="header-icon" src="icons/account-circle.svg"></a>
-                        <div><a href="#">Morgan Oakley</a></div>
+                        <div><a href="#">John Smith</a></div>
                     </div>
                 </div>
                 <div class="header-bottom">
@@ -59,7 +59,7 @@
                         <img class="header-icon" src="icons/account-circle.svg">
                         <div class="header-bottom-text">
                             <div>Hi there,</div>
-                            <div>Morgan Oakley (@morgan)</div>
+                            <div>John Smith (@john)</div>
                         </div>
                     </div>
                     <div class="header-bottom-right">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
         <div class="main-content">
             <div class="projects-container">
@@ -132,7 +132,7 @@
                       </div>
                       <div class="card">
                         <div class="card-text">
-                            <p class="card-title">Money Maker</p>
+                            <p class="card-title">Cool Project</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                         </div>
                         <div class="card-icons">
@@ -141,6 +141,19 @@
                             <a href="#"><img class="header-icon" src="icons/share.svg"></a>
                         </div>
                       </div>
+                </div>
+            </div>
+            <div id="slideshow-container">
+                <div class="title">Slideshow</div>
+                <div id="slideshow">
+                    <img src="images/1.jpg" alt="">
+                    <img src="images/2.jpg" alt="">
+                    <img src="images/3.jpg" alt="">
+                    <button id="left">❮</button>
+                    <button id="right">❯</button>
+                    <span class="circle" id="circle-left" data-no="0"></span>
+                    <span class="circle" id="circle-middle" data-no="1"></span>
+                    <span class="circle" id="circle-right" data-no="2"></span>
                 </div>
             </div>
             <div class="right-side">
@@ -152,7 +165,7 @@
                     </div>
                     <div><hr></div> 
                     <div class="ann-text">
-                        <p>Community Share Day</p>
+                        <p>Random Announcement</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
                     <div><hr></div> 
@@ -168,13 +181,13 @@
                             <a href="#"><img src="icons/t.svg"></a>
                             <div class="trending-users-text">
                                 <div>@tegan</div>
-                                <div>World Peace Builder</div>
+                                <div>Wordle Clone 5000</div>
                             </div>
                         </li>
                         <li>
                             <a href="#"><img src="icons/account-circle.svg"></a>
                             <div class="trending-users-text">
-                                <div>@morgan</div>
+                                <div>@john</div>
                                 <div>Super Cool Project</div>
                             </div>
                         </li>
@@ -189,7 +202,7 @@
                             <a href="#"><img src="icons/car.svg"></a>
                             <div class="trending-users-text">
                                 <div>@alex</div>
-                                <div>No Traffic Maker</div>
+                                <div>City Traffic Maps</div>
                             </div>
                         </li>
                     </ul>
