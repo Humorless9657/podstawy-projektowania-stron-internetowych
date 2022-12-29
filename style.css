@@ -357,6 +357,7 @@ hr {
     .main-content {
         grid-template-columns: auto;
         grid-template-rows: auto auto; /* */
+        padding: 25px 25px 0 25px;
         gap: 25px;
     }
     
@@ -401,5 +402,59 @@ hr {
 
     .trending > ul {
         align-items: center;
+    }
+
+    .announcements {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .main-content {
+        padding: 0;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 90px auto;
+        align-items: center;
+    }
+
+    .header-top {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .header-top-right {
+        display: none;
+    }
+
+    .header-bottom {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .header-bottom-right {
+        gap: 10px;
+        align-self: center;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .card-text {
+        padding: 1rem 1rem 0 1.5rem;
+    }
+
+    #circle-left {
+        left: 42%;
+    }
+    
+    #circle-middle {
+        left: 50%;
+    }
+    
+    #circle-right {
+        left: 58%;
     }
 }
