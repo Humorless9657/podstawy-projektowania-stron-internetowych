@@ -19,6 +19,17 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 7fr;
 }
+ /* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #188dcc;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #11628d;
+  }
 
 /* SIDEBAR */
 .sidebar {
@@ -477,15 +488,4 @@ hr {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #188dcc;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #11628d;
 }
