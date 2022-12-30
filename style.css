@@ -74,7 +74,7 @@ li {
     margin-top: 1rem;
 }
 
-.sidebar-content-1 > li{
+.sidebar-content-1 > li {
     padding: .75rem;
 }
 
@@ -157,7 +157,7 @@ li {
 /* MAIN */
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr;
     background-color: #e2e8f0;
     box-shadow: 0px -2px 5px -2px #888;
 }
@@ -169,31 +169,15 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
-/*.card {*/
-/*    background-color: #ffffff;*/
-/*    margin: 15px;*/
-/*    border-radius: 10px;*/
-/*    box-shadow: 3px 3px 2px rgb(209, 208, 208);*/
-/*    border-left: 7px solid #eeb328;*/
-/*    display: grid;*/
-/*    grid-template-rows: auto auto; !* *!*/
-/*}*/
-
-/*.card-text {*/
-/*    padding: 1rem 7rem 0 1.5rem;*/
-/*}*/
-
-/*.card-title {*/
-/*    font-weight: bolder;*/
-/*    font-size: larger;*/
-/*    line-height: 0;*/
-/*}*/
-
 .card-icons {
-    justify-self: end;
-    padding: 0 2rem 1rem 0;
-    display: flex;
-    gap: 2rem;
+    float: right;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #E3F2FD;
+    color: #42A5F5;
+    border-radius: 5px;
 }
 
 .title {
@@ -352,6 +336,10 @@ hr {
 .circle:hover {
     cursor: pointer;
     background-color: white;
+}
+
+.header-icon{
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 1320px) {
