@@ -4,6 +4,8 @@
 - https://unsplash.com/photos/vpOeXr5wmR4 by <a href="https://unsplash.com/@jstrippa">James Harrison</a>
 - https://unsplash.com/photos/lFtttcsx5Vk by <a href="https://unsplash.com/@kellysikkema">Kelly Sikkema</a>
   
+## Charts from:
+https://apexcharts.com/
   
-  
-
+## Fonts from:
+https://fontawesome.com/
