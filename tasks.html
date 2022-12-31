@@ -42,12 +42,12 @@
                 </ul>
             </div>
             <div class="header">
-                <a id="header-hamburger" href="#">☰</a>
+                <a id="header-hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
                 <div class="header-content">
                     <div class="header-top">
                         <div class="header-top-left">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <form class="d-flex w-50" role="search">
+                            <form class="d-flex w-100" role="search">
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                 <button class="btn btn-primary btn-outline-primary text-white" type="submit">Search
                                 </button>
@@ -66,11 +66,39 @@
         
             <div class="main-content">
                 <div class="tasks-container">
-                    <h3>Tasks:</h3>
-                    <form action="">
-                        <input type="checkbox" id="task-one" name="task-one" value="Strawberry">
-                        <label for="task-one">Task 1</label>
-                    </form>
+                    <div class="tasks col-12 col-md-6">
+                        <div class="tasks-header">
+                            <h3>Tasks</h3>
+                            <div>4 tasks remaining</div>
+                        </div>
+                        <ul class="tasks-content">
+                            <li>
+                                <input class="form-check-input" type="checkbox" checked="true">
+                                <label>lorem ipsum dolor sit amet</label>
+                            </li>
+    
+                            <li>
+                                <input class="form-check-input" type="checkbox">
+                                <label>ex expedita nihil reprehenderit</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox">
+                                <label>consequatur ducimus dolor</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox">
+                                <label>lorem ipsum dolor sit amet</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox">
+                                <label>veritatis ipsum provident</label>
+                            </li>
+                        </ul>
+                        <div class="task-new">
+                            <input placeholder="add a new task">
+                            <button class="btn btn-primary btn-outline-primary text-white">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </body>

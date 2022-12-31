@@ -189,6 +189,109 @@ li {
     font-size: 2.25rem;
 }
 
+/* MESSAGES TAB */
+.main-content .messages-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.main-content li .list-message-container {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+
+.main-content li .list-message-container span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* TASKS TAB */
+.tasks-container {
+    padding: 1.5rem 1.5rem;
+}
+
+.tasks {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px rgb(209, 208, 208);
+}
+
+.tasks-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #188dcc;
+    color: white;
+    padding: 2rem 1rem 1.5rem 1rem;
+}
+
+.tasks-content {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tasks-content li {
+    position: relative;
+}
+
+.tasks-content label::after {
+    content: "";
+    background: black;
+    opacity: 0.08;
+    position: absolute;
+    top: 100%;
+    left: 2.1rem;
+    right: 0;
+    height: 2px;
+}
+
+.tasks-header > h3 {
+    font-weight: 600;
+}
+
+[type='checkbox']:checked + label {
+    text-decoration: line-through;
+}
+
+.task-new {
+    padding: 0 1rem 3rem 3.3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.task-new > input {
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.tasks-container input[type=checkbox] + label {
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+
+/* PRODUCTS TAB*/
+.main-content .products-container .card {
+    overflow: hidden;
+}
+
+.main-content .products-container .card img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
 @media only screen and (max-width: 1320px) {
     .main-container {
         grid-template-columns: auto;
@@ -197,12 +300,6 @@ li {
     .sidebar {
         display: none;
     }
-
-    /* .main-content {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        gap: 25px;
-    } */
 
     .title {
         text-align: center;
@@ -245,55 +342,4 @@ li {
     .card-text {
         padding: 1rem 1rem 0 1.5rem;
     } */
-}
-
-/* MESSAGES TAB */
-.main-content .messages-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-}
-
-.main-content li .list-message-container {
-    flex: 1;
-    padding: 20px;
-    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-}
-
-.main-content li .list-message-container span {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* TASKS TAB */
-.tasks-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-}
-
-.tasks-container .single-task {
-    display: flex;
-}
-
-.tasks-container input[type=checkbox] + label {
-    margin: 0.2em;
-    cursor: pointer;
-    padding: 0.2em;
-}
-
-
-/* PRODUCTS TAB*/
-.main-content .products-container .card {
-    overflow: hidden;
-}
-
-.main-content .products-container .card img {
-    width: 100%;
-    object-fit: cover;
-    transition: transform .5s ease;
 }
