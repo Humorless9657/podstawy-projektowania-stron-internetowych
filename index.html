@@ -18,17 +18,14 @@
 <body>
 <div class="container-fluid main-container p-0">
     <div id="nav" class="overlay">
-        <a href="#" id="close">×</a>
-        <div class="overlay-content">
-            <a class="tasks" href="#">Home</a>
-            <a href="#">Profile</a>
-            <a href="#">Messages</a>
-            <a class="images" href="#">Images</a>
-            <a class="tasks" href="#">Projects</a>
-            <a href="#">Communities</a>
-            <a href="#">Settings</a>
-            <a href="#">Support</a>
-            <a href="#">Privacy</a>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="overlay-content fs-5">
+            <li><a href="index.html" class="w-100 p-1 fs-5"><i class="fa-solid fa-house px-1 pe-2 mx-1"></i>Dashboard</a>
+            </li>
+            <li><a href="products.html" class="w-100 p-1 fs-5"><i class="fa-solid fa-cart-shopping px-1 pe-2 mx-1"></i>Products</a></li>
+            <li><a href="messages.html" class="w-100 p-1 fs-5"><i class="fa-solid fa-message px-1 pe-2 mx-1"></i>Messages</a></li>
+            <li><a href="projects.html" class="w-100 p-1 fs-5"><i class="fa-solid fa-diagram-project px-1 pe-2 mx-1"></i>Projects</a></li>
+            <li><a href="tasks.html" class="w-100 p-1 fs-5"><i class="fa-solid fa-list-check px-1 pe-2 mx-1"></i>Tasks</a></li>
         </div>
     </div>
     <div class="sidebar">
@@ -43,12 +40,12 @@
         </ul>
     </div>
     <div class="header">
-        <a id="header-hamburger" href="#">☰</a>
+        <a id="header-hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
         <div class="header-content">
             <div class="header-top">
                 <div class="header-top-left">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <form class="d-flex w-50" role="search">
+                    <form class="d-flex w-100" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-primary btn-outline-primary text-white" type="submit">Search
                         </button>
