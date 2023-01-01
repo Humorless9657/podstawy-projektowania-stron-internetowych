@@ -123,15 +123,14 @@ li {
     box-shadow: 0 -2px 5px -2px #888;
 }
 
-/* .projects {
-    background-color: #e2e8f0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+.hover-zoom:hover{
+    transform: scale(1.2);
+    z-index: 1;
 }
 
- .card-icons img {
-    height: 1.5rem;
-} */
+.z-4{
+    z-index: 4;
+}
 
 .card-icons {
     float: right;
