@@ -455,6 +455,15 @@ li {
     .header-top-right > div > a {
         display: none;
     }
+
+    .z-4 {
+        z-index: 0;
+    }
+
+    .hover-zoom:hover{
+        transform: revert;
+        z-index: revert;
+    }
 }
 
 @media only screen and (max-width: 560px) {
