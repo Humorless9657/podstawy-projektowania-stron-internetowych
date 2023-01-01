@@ -1,4 +1,6 @@
 /* Hamburger nav */
+// noinspection JSUnresolvedFunction
+
 const hamburger = document.getElementById('header-hamburger');
 const closeButton = document.getElementById('close');
 const nav = document.getElementById('nav');
