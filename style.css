@@ -256,13 +256,12 @@ li {
 
 /* TASKS TAB */
 .tasks-container {
-    padding: 1.5rem 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .tasks {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 3px 3px 2px rgb(209, 208, 208);
 }
 
 .tasks-header {

@@ -32,7 +32,7 @@
                 <li><a href="projects.html" class="w-100 p-1 fs-5"><i
                         class="fa-solid fa-diagram-project px-1 pe-2 mx-1"></i>Projects</a></li>
                 <li><a href="tasks.html" class="w-100 p-1 fs-5"><i
-                        class="fa-solid fa-list-check px-1 pe-2 mx-1"></i>Tasks</a></li>
+                        class="fa-solid fa-list-check px-1 pe-2 mx-1"></i>Tasks list</a></li>
             </ul>
         </div>
     </div>
@@ -73,46 +73,70 @@
             </div>
         </div>
     </div>
-
     <div class="main-content">
         <div class="tasks-container">
-            <div class="tasks col-12 col-md-6">
-                <div class="tasks-header">
-                    <h3>Tasks</h3>
-                    <div>4 tasks remaining</div>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title m-0 p-4 ps-0">Tasks</h1>
                 </div>
-                <ul class="tasks-content">
-                    <li>
-                        <input class="form-check-input" type="checkbox" checked="true" id="task-1">
-                        <label for="task-1">lorem ipsum dolor sit amet</label>
-                    </li>
+            </div>
+            <div class="row mb-4">
+                <div class="tasks p-0 mb-4 mb-md-0 col-12 col-md-6">
+                    <div class="tasks-header">
+                        <h3>Tasks list</h3>
+                        <div>4 tasks remaining</div>
+                    </div>
+                    <ul class="tasks-content">
+                        <li>
+                            <input class="form-check-input" type="checkbox" checked="true" id="task-1">
+                            <label for="task-1">lorem ipsum dolor sit amet</label>
+                        </li>
 
-                    <li>
-                        <input class="form-check-input" type="checkbox" id="task-2">
-                        <label for="task-2">ex expedita nihil reprehenderit</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" id="task-3">
-                        <label for="task-3">consequatur ducimus dolor</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" id="task-4">
-                        <label for="task-4">lorem ipsum dolor sit amet</label>
-                    </li>
-                    <li>
-                        <input class="form-check-input" type="checkbox" id="task-5">
-                        <label for="task-5">veritatis ipsum provident</label>
-                    </li>
-                </ul>
-                <div class="task-new">
-                    <label class="d-none" for="new-task"></label>
-                    <input placeholder="add a new task" id="new-task">
-                    <button class="btn btn-primary btn-outline-primary text-white">+</button>
+                        <li>
+                            <input class="form-check-input" type="checkbox" id="task-2">
+                            <label for="task-2">ex expedita nihil reprehenderit</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" id="task-3">
+                            <label for="task-3">consequatur ducimus dolor</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" id="task-4">
+                            <label for="task-4">lorem ipsum dolor sit amet</label>
+                        </li>
+                        <li>
+                            <input class="form-check-input" type="checkbox" id="task-5">
+                            <label for="task-5">veritatis ipsum provident</label>
+                        </li>
+                    </ul>
+                    <div class="task-new">
+                        <label class="d-none" for="new-task"></label>
+                        <input placeholder="add a new task" id="new-task">
+                        <button class="btn btn-primary btn-outline-primary text-white">+</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0 ps-md-4">
+                    <div class="card h-100 mb-4 border-0">
+                        <div class="card-body">
+                            <div id="task-chart" class="d-flex h-100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12 p-0">
+                    <div class="card h-100 mb-4 border-0">
+                        <div class="card-body">
+                            <div id="task-bar-chart"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--Apex Charts-->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <!--    JavaScript-->
 <script src="script.js" defer></script>
 </body>
