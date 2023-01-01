@@ -324,7 +324,7 @@ li {
 }
 
 
-/* PRODUCTS TAB*/
+/* PRODUCTS TAB */
 .main-content .products-container .card {
     overflow: hidden;
 }
@@ -333,6 +333,48 @@ li {
     width: 100%;
     object-fit: cover;
     transition: transform .5s ease;
+}
+
+/* PROJECTS TAB */
+.projects {
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.project-card {
+    background-color: #ffffff;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(209, 208, 208);
+    border-left: 7px solid #188dcc;
+    display: grid;
+}
+
+.project-card-text {
+    padding: 1rem 7rem 0 1.5rem;
+}
+
+.project-card-text p {
+    margin-top: revert;
+    margin-bottom: revert;
+}
+
+.project-card-title {
+    font-weight: bolder;
+    font-size: larger;
+    line-height: 0;
+}
+
+.project-card-icons {
+    justify-self: end;
+    padding: 0 2rem 1rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.project-card-icons img{
+    height: 1.5rem;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -378,11 +420,11 @@ li {
         display: none;
     }
 
-    /* .projects {
+    .projects {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
-    .card-text {
+    .project-card-text {
         padding: 1rem 1rem 0 1.5rem;
-    } */
+    }
 }
