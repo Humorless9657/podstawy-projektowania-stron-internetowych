@@ -185,6 +185,7 @@ li {
     color: #efefef;
     display: block;
     font-size: 25px;
+    white-space: nowrap;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -260,6 +261,40 @@ li {
 .message.gray span {
     float: left;
     color: #6b7280;
+}
+
+.messages-header {
+    align-items: center;
+}
+
+.messages-header i {
+    font-size: 1.5rem;
+}
+
+.messages-new {
+    border-top: 1px solid #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.messages-new input {
+    border: none;
+    outline: none;
+}
+
+.messages-new div {
+    display: flex;
+    gap: 10px;
+}
+
+.messages-new .message-icons {
+    gap: 5px
+}
+
+.messages-new img {
+    width: 30px;
 }
 
 /* TASKS TAB */
