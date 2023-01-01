@@ -123,6 +123,15 @@ li {
     box-shadow: 0 -2px 5px -2px #888;
 }
 
+.hover-zoom:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.z-4{
+    z-index: 4;
+}
+
 .card-icons {
     float: right;
     height: 2rem;
