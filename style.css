@@ -301,6 +301,10 @@ li {
     width: 30px;
 }
 
+.messages-header i, .message-icons i {
+    cursor: pointer;
+}
+
 /* TASKS TAB */
 .tasks-container {
     padding: 0 1.5rem;
