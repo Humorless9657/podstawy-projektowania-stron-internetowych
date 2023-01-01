@@ -8,5 +8,5 @@ https://humorless9657.github.io/podstawy-projektowania-stron-internetowych/
 ## Charts:
 https://apexcharts.com/
   
-## Fonts:
+## Icons:
 https://fontawesome.com/
