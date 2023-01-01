@@ -109,7 +109,6 @@ const customerChart = new ApexCharts(document.querySelector("#customerChart"), c
 customerChart.render();
 
 
-
 const seoChartOptions = {
     series: [45, 35, 18, 2],
     chart: {

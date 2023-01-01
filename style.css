@@ -224,13 +224,13 @@ li {
     padding: 1rem;
     margin: 0.5rem 0;
 }
-  
+
 .gray {
     border-color: #4b5563;
     background-color: #e5e5e5;
     align-self: flex-end;
 }
-  
+
 .message img {
     float: left;
     width: 55px;
@@ -373,7 +373,7 @@ li {
     gap: 2rem;
 }
 
-.project-card-icons img{
+.project-card-icons img {
     height: 1.5rem;
 }
 
