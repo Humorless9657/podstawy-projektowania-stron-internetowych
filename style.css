@@ -224,13 +224,13 @@ li {
     padding: 1rem;
     margin: 0.5rem 0;
 }
-  
+
 .gray {
     border-color: #4b5563;
     background-color: #e5e5e5;
     align-self: flex-end;
 }
-  
+
 .message img {
     float: left;
     width: 55px;
@@ -256,13 +256,12 @@ li {
 
 /* TASKS TAB */
 .tasks-container {
-    padding: 1.5rem 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .tasks {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 3px 3px 2px rgb(209, 208, 208);
 }
 
 .tasks-header {
@@ -373,7 +372,7 @@ li {
     gap: 2rem;
 }
 
-.project-card-icons img{
+.project-card-icons img {
     height: 1.5rem;
 }
 

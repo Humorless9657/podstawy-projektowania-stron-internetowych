@@ -1,4 +1,6 @@
 /* Hamburger nav */
+// noinspection JSUnresolvedFunction
+
 const hamburger = document.getElementById('header-hamburger');
 const closeButton = document.getElementById('close');
 const nav = document.getElementById('nav');
@@ -109,7 +111,6 @@ const customerChart = new ApexCharts(document.querySelector("#customerChart"), c
 customerChart.render();
 
 
-
 const seoChartOptions = {
     series: [45, 35, 18, 2],
     chart: {
@@ -132,3 +133,76 @@ const seoChartOptions = {
 
 const seoChart = new ApexCharts(document.querySelector("#seo-chart"), seoChartOptions);
 seoChart.render();
+
+const tasksOptions = {
+    series: [4, 1, 4, 0],
+    chart: {
+        width: '100%',
+        type: 'donut',
+    },
+    labels: ['Planned', 'Completed', 'In Progress', 'Blocked'],
+    title: {
+        text: 'Tasks by status',
+        align: 'left'
+    },
+    legend: {
+        show: true,
+        showForSingleSeries: false,
+        showForNullSeries: true,
+        showForZeroSeries: true,
+        position: 'bottom',
+    }
+};
+
+const taskChart = new ApexCharts(document.querySelector("#task-chart"), tasksOptions);
+taskChart.render();
+
+
+const taskBarChartOptions = {
+    series: [{
+        name: 'Planned',
+        data: [12, 15, 18, 10, 13, 15, 15, 15, 14]
+    }, {
+        name: 'Completed',
+        data: [15, 20, 23, 19, 18, 17, 10, 21, 17]
+    }, {
+        name: 'In Progress',
+        data: [14, 19, 21, 18, 15, 11, 16, 17, 16]
+    }, {
+        name: 'Blocked',
+        data: [2, 3, 5, 6, 1, 5, 8, 1, 0]
+    }],
+    chart: {
+        type: 'bar',
+        width: '100%',
+        height: 350,
+    },
+    plotOptions: {
+        bar: {
+            horizontal: false,
+            columnWidth: '55%',
+            endingShape: 'rounded'
+        },
+    },
+    dataLabels: {
+        enabled: false
+    },
+    title: {
+        text: 'Tasks by Month',
+        align: 'center'
+    },
+    stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+    },
+    xaxis: {
+        categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    },
+    fill: {
+        opacity: 1
+    },
+};
+
+const taskBarChart = new ApexCharts(document.querySelector("#task-bar-chart"), taskBarChartOptions);
+taskBarChart.render();
